@@ -10,7 +10,7 @@
 ##SBATCH --mail-type=ALL             # Send a notification when the job starts, stops, or fails
 ##SBATCH --mail-user=myemail@asu.edu # send-to address
 
-myDir=/home/ssnyde11/scratch/march_tsrchitect/tsr
+myDir=/home/ssnyde11/scratch/may_tsrchitect/tsrchitect
 
 echo "Launching job"
 

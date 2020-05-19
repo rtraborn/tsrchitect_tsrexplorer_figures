@@ -27,11 +27,11 @@ library("TSRchitect")
 library("GenomicRanges")
 
 
-BAMDIR  <- c("/home/ssnyde11/scratch/march_tsrchitect/tsr/BAMDIR/bams_sns")
+BAMDIR  <- c("/home/ssnyde11/scratch/may_tsrchitect/BAMDIR")
 PdGFF3  <- c("/home/ssnyde11/scratch/genomes/pulex_genome_files/PA42_v4_files/PA42.4.0.gff")
 
 # ... initializing the tssObj object:
-PdSTRIPE <- loadTSSobj(experimentTitle="marchdaphnia", inputDir=BAMDIR, isPairedBAM=TRUE, isPairedBED=FALSE, sampleNames=c("W17_1", "W17_2", "W17_3", "W17_4","LPB_1", "LPB_2", "LPB_3", "TEX36_1", "TEX36_2", "TEX36_3", "OA15_1", "OA15_2", "OA15_3", "POV12_1", "POV12_2", "POV84_1"), replicateIDs=c(1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6))
+PdSTRIPE <- loadTSSobj(experimentTitle="marchdaphnia", inputDir=BAMDIR, isPairedBAM=TRUE, isPairedBED=FALSE, sampleNames=c("BRV_1", "BRV_2", "LPB_1", "LPB_2","LPB_3", "NFL_1", "OA15_1", "OA15_2", "OA15_3", "OA85_1", "OA85_3", "PA42_1", "POV12_1", "POV12_2", "POV84_1", "TEX36_1", "TEX36_2", "TEX36_3", "W17_1", "W17_2", "W17_3", "W17_4", "W17_5", "W17_6", "W17_7"), replicateIDs=c(1,1,2,2,2,3,4,4,4,5,5,6,7,7,8,9,9,9,10,10,10,10,10,10,10))
 cat (PdSTRIPE@title,"\tWorkflow 1\n")
 
 # ... converting BAM data into TSS information and attaching it to the tssObj object:
